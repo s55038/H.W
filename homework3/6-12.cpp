@@ -1,49 +1,6 @@
 #include<iostream>
 #include<fstream>
 #include<cstdlib>
-class BoxOfProduce {
-public:
-	BoxOfProduce();
-	void setfruit();
-	string getfruit_1();
-	string getfruit_2();
-	string getfruit_3();
-	void output();
-private:
-	string fruit[5];
-};
-int main(void) {
-	BoxOfProduce fruit1, fruit2, fruit3;
-
-}
-BoxOfProduce::BoxOfProduce{};
-void BoxOfProduce::setfruit() {
-	std::ifstream file("input.txt");
-	if (file.is_open()) {
-		for (i = 0; i < 5; i++) {
-			file >> fruit[i];
-		}
-	}
-	else {
-		std::cout<< "File not exsit" << std::endl;
-	}
-}
-string BoxOfProduce::getfruit_1() {
-	return fruit[0];
-}
-string BoxOfProduce::getfruit_2() {
-	return fruit[1];
-}
-string BoxOfProduce::getfruit_3() {
-	return fruit[2];
-}
-void BoxOfProduce::output() {
-	cout<<
-}
-
-/*#include<iostream>
-#include<fstream>
-#include<cstdlib>
 #include<string>
 using namespace std;
 
@@ -70,7 +27,7 @@ int main(void) {
 	srand(time(NULL));
 
 	inputStream.open("input.txt");   //open file
-
+	
 	if (!inputStream) {
 		cout << "File not exists.\n";
 		exit(1);
@@ -82,13 +39,13 @@ int main(void) {
 	}
 
 	user.setProduce(totalProduce);    //randomly choose three bundles of fruits or vegetables
-
+	 
 	//display produce list
 	cout << "Produce list:" << endl;
 	cout << "Broccoli" << endl << "Tomato" << endl << "Kiwi" << endl << "Kale" << endl << "Tomatillo" << endl << endl;
 
 	//display the content of box before substitution
-	cout << "Contents of the box:" << endl;
+	cout<< "Contents of the box:" << endl;
 	cout << "1. " << user.getProduce_1() << endl;
 	cout << "2. " << user.getProduce_2() << endl;
 	cout << "3. " << user.getProduce_3() << endl;
@@ -106,7 +63,7 @@ int main(void) {
 		cout << "Enter 1 to substitute produce, or 0 to finish: ";
 		cin >> flag;
 	}
-
+	 
 	cout << endl;
 	user.output();    //display the content of box after substitution
 
@@ -149,7 +106,7 @@ void BoxOfProduce::substitution() {
 		cout << "Error! Enter again: ";
 		cin >> select;
 	}
-
+	
 	produce[num - 1] = select;
 }
 
@@ -161,4 +118,4 @@ void BoxOfProduce::output() {
 	cout << endl;
 }
 
-BoxOfProduce::BoxOfProduce() {}*/
+BoxOfProduce::BoxOfProduce() {}
