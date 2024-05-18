@@ -1,0 +1,6 @@
+﻿  8-3.cpp
+C:\Users\USER\CPP_Project\homework4\8-3\8-3\8-3.cpp(78,14): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\USER\CPP_Project\homework4\8-3\8-3\8-3.cpp(79,19): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\USER\CPP_Project\homework4\8-3\8-3\8-3.cpp(86,14): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+C:\Users\USER\CPP_Project\homework4\8-3\8-3\8-3.cpp(87,19): warning C4244: '正在初始化': 將 'double' 轉換為 'int'，由於類型不同，可能導致資料遺失
+  8-3.vcxproj -> C:\Users\USER\CPP_Project\homework4\8-3\x64\Debug\8-3.exe
